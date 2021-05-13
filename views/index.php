@@ -29,7 +29,7 @@ $images = $view->get_picture();
             if($i == 1){ //active page
                 echo "            
                     <div class='carousel-item active text-center'>
-                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-55 mx-auto' alt='{$regular}'>
+                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-50 mx-auto' alt='{$regular}'>
                         <div class='carousel-caption d-none d-md-block'>
                         <h5><span class='bg bg-dark p-2'>{$regular}</span></h5>
                         </div>
@@ -39,7 +39,7 @@ $images = $view->get_picture();
                 echo "
 
                     <div class='carousel-item text-center'>
-                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-55 mx-auto' alt='{$regular}'>
+                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-50 mx-auto' alt='{$regular}'>
                         <div class='carousel-caption d-none d-md-block'>
                         <h5?<span class='bg bg-dark p-2'>{$regular}</span></h5>
                         </div>

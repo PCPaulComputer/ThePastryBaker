@@ -22,22 +22,22 @@ We'll review these comments and implement changes for the better. <br />By the e
 <div class="row">
     <div class="col-lg-3 col-md-1"></div>
     <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12">
-        <form action ="bakeryadd.php" method ="POST" class="w-90 border border-dark">
+        <form action ="bakeryadd.php" method ="POST" class="w-100 border border-dark">
         <div class="form-group m-4">
             <label for="name">Name:</label><br/>
-            <input type="text" name="name" value="" class="w-100" id="name">
+            <input type="text" name="name" value="" class="w-100 border border-dark" id="name">
             <span><? $nameStatus ?></span>
         </div>
             
         <div class="form-group m-4">
             <label for="rating">Rating:</label><br/>
-            <input type="number" name="rating" value="" class="w-100" id="rating" min=1 max=5 >
+            <input type="number" name="rating" value="" class="w-100 border border-dark" id="rating" min=1 max=5 >
             <span><? $ratingStatus ?></span>
         </div>
             
         <div class="form-group m-4">
             <label for="description">Description:</label><br/>
-            <textarea name="description" value="" id="description" row=5 class="w-100"></textarea>
+            <textarea name="description" value="" id="description" row=5 class="w-100 border border-dark"></textarea>
             <span><? $descriptionStatus ?></span>
         </div>
             
@@ -47,7 +47,7 @@ We'll review these comments and implement changes for the better. <br />By the e
             $view = new Bakery;
             $pictures = $view->get_picture();
             ?>
-            <select name="picture" id="picture" class="w-100">
+            <select name="picture" id="picture" class="w-100 border border-dark">
                 <?php 
                 for($i = 0; $i < count($pictures); $i++){
                     $name = substr($pictures[$i], 0, -4);

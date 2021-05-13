@@ -8,7 +8,7 @@ $images = $view->get_picture();
 ?>
 <div class="jumbotron jumbotron-fluid" style="background-image: url('./images/pastry.png'); background-size: cover; background-repeat: no-repeat;">
   <div class="container">
-    <h1 class="display-4 text-light font-weight-bold">Welcome to LaLa Pâtisserie</h1>
+    <h1 class="display-4 text-light font-weight-bold">The Pastry Baker</h1>
     <p class="lead text-light font-weight-bold">Sweet almighty goodness treats!</p>
   </div>
 </div>
@@ -29,7 +29,7 @@ $images = $view->get_picture();
             if($i == 1){ //active page
                 echo "            
                     <div class='carousel-item active text-center'>
-                        <img src='./images/{$images[$i]}' height='350px' class='d-block img-fluid w-60 mx-auto' alt='{$regular}'>
+                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-55 mx-auto' alt='{$regular}'>
                         <div class='carousel-caption d-none d-md-block'>
                         <h5><span class='bg bg-dark p-2'>{$regular}</span></h5>
                         </div>
@@ -39,7 +39,7 @@ $images = $view->get_picture();
                 echo "
 
                     <div class='carousel-item text-center'>
-                        <img src='./images/{$images[$i]}' height='350px' class='d-block img-fluid w-60 mx-auto' alt='{$regular}'>
+                        <img src='./images/{$images[$i]}' height='450px' class='d-block img-fluid w-55 mx-auto' alt='{$regular}'>
                         <div class='carousel-caption d-none d-md-block'>
                         <h5?<span class='bg bg-dark p-2'>{$regular}</span></h5>
                         </div>

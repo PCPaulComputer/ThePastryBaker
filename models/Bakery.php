@@ -1,6 +1,6 @@
 <?php 
 /**
- * @author Paul M
+ * @author Paul Madduma
  *  Model of the Bakery Web Application to start with building the website
  */
 

@@ -35,9 +35,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./bakeryadd.php">Comment</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./bakeryedit.php?id<?php echo $id;  ?>">Edit</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="./bakeryedit.php?id<?php //echo $id;  ?>">Edit</a>
+                        </li> -->
                     </ul>
                 </div>
             </nav>

@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Paul M
+ * @author Paul Madduma
  * Sanitizing inputs
  */
 class Sanitizer {

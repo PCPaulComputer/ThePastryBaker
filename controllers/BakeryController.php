@@ -16,13 +16,16 @@ class BakeryController extends Connection {
         //Putting the id in descending order because id auto-increments
         //The higher the number of the id, the more recent it was posted.
         $sql = "SELECT * FROM bakery ORDER BY id";
-        $stmt = $this->connector()->prepare($sql);
-        $stmt->execute();
-        $records = $stmt->fetchAll();
-        if(empty($records)){
-          return '<div class="alert alert-info m-4 border border-info container">No product reviews available.</div>';
-        }
-        return $records;
+        if($sql !== null):
+          $stmt = $this->connector()->prepare($sql);
+          $stmt->execute();
+          $records = $stmt->fetchAll();
+          if($records == null){
+            return '<div class="alert alert-info m-4 border border-info container">No product reviews available.</div>';
+          } else {
+            return $records;
+          }
+        endif;
     }
 
     /**
